@@ -1,0 +1,19 @@
+# Template information section
+name: "mvp_swift"
+summary: "Module for creating swift MVP modules"
+author: "Ilya Sysoi"
+version: "0.0.1"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+
+# Presenter layer
+- {name: Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
+
+# View layer
+- {name: ViewController.swift, path: Code/ViewController/view_controller.swift.liquid}
+
+# View protocol
+- {name: ViewProtocol.swift, path: Code/ViewProtocol/view_protocol.swift.liquid}

@@ -1,0 +1,22 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+
+class {{ module_info.name }}Presenter {
+
+    // MARK: Properties
+
+    private weak var view: {{ module_info.name }}ViewProtocol?
+
+    // MARK: Internal helpers
+
+    func onViewDidLoad(view: {{ module_info.name }}ViewProtocol) {
+      self.view = view
+    }
+}

@@ -1,0 +1,55 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+class {{ module_info.name }}ViewController: UIViewController {
+
+
+    // MARK: Constants
+
+    // MARK: Properties
+
+    private var presenter: {{ module_info.name }}Presenter!
+
+    // MARK: UIViewController
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        presenter = {{ module_info.name }}Presenter()
+        presenter.onViewDidLoad(view: self)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
+    // MARK: Internal helpers
+
+    private func initUIAndAddToSubviews() {
+
+        configureSubviews()
+        addSubviews()
+        configureConstraints()
+    }
+
+    private func configureSubviews() {
+    }
+
+    private func addSubviews() {
+    }
+
+    private func configureConstraints() {
+    }
+
+}
+
+extension {{ module_info.name }}ViewController: {{ module_info.name }}ViewProtocol {
+
+}
